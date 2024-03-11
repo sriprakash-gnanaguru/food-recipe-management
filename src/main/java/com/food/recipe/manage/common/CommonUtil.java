@@ -2,13 +2,7 @@ package com.food.recipe.manage.common;
 
 import java.util.Random;
 
-import static com.food.recipe.manage.common.Constants.SYSTEM_ID;
-
 public class CommonUtil {
-
-    public static Long getUniqueId(){
-        return getRandomNumberString();
-    }
 
     public static Long getRandomNumberString() {
         // It will generate 6 digit random Number.
