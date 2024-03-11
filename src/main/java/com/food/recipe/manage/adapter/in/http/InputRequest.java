@@ -9,17 +9,7 @@ import lombok.*;
 @ToString
 public class InputRequest {
 
-    private String receipeId;
-
-    private String dish;
-
-    private String ingredient;
-
-    private String servings;
-
-    private String instruction;
-
-    private String name;
+    private Receipe receipe;
 
     private String userId;
 

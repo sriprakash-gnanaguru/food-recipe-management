@@ -13,6 +13,11 @@ public class ServiceException extends Exception {
         this(receipeId,  null, cause);
     }
 
+    public ServiceException( Throwable cause) {
+        this(null,  cause.getMessage(), cause);
+        this.timestamp = LocalDateTime.now();
+    }
+
     @Builder
     public ServiceException(String receipeId, String errMsg, Throwable cause){
         super(receipeId,cause);

@@ -18,3 +18,4 @@ com\food\recipe\manage\common\BusinessException$BusinessExceptionBuilder.class
 com\food\recipe\manage\recipemanagement\RecipeManagementApplication.class
 com\food\recipe\manage\common\DatabaseException.class
 com\food\recipe\manage\adapter\out\http\OutputResponse$OutputResponseBuilder.class
+com\food\recipe\manage\adapter\out\db\FoodReceipeSpecification.class

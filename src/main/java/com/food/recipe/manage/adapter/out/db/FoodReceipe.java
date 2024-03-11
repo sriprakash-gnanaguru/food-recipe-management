@@ -9,12 +9,17 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Table(name="FOOD_RECEIPE_MANAGEMENT")
+@Table(name="FOOD_RECEIPE")
 public class FoodReceipe {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -31,8 +36,8 @@ public class FoodReceipe {
     @Column(name="NO_OF_SERVINGS")
     private Integer servings;
 
-    @Column(name="INGREDIENT")
-    private String ingredient;
+    @OneToMany(mappedBy = "foodReceipe", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<FoodIngredient> recipeIngredients = new ArrayList<>();
 
     @Column(name="INSTRUCTION")
     private String instruction;
