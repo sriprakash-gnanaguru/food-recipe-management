@@ -38,7 +38,7 @@ public class FoodReceipeManagementService {
         FoodReceipe receipe = null;
         try{
             receipe = repository.getFoodReceipeByRecipeId(Long.valueOf(receipeId));
-            if(receipe != null || receipe.getRecipeId() != null){
+            if(receipe != null && receipe.getRecipeId() != null){
                 receipe = translate(request,receipe);
                 receipe.setRecipeId(Long.valueOf(receipeId));
                 receipe = repository.save(receipe);

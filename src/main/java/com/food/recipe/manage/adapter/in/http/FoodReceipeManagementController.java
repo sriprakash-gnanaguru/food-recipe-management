@@ -56,13 +56,19 @@ public class FoodReceipeManagementController {
     @PostMapping(path  = "/addReceipe")
     @ResponseStatus(HttpStatus.CREATED)
     public @ResponseBody ResponseEntity<OutputResponse> addReceipe(@RequestBody InputRequest request) throws BusinessException {
+        OutputResponse response = null;
         try{
             FoodReceipe data = service.addReceipe(request);
-            request.getReceipe().setReceipeId(String.valueOf(data.getRecipeId()));
+            if(data == null || data.getRecipeId() == null){
+                response = OutputResponse.builder().receipeId(request.getReceipe().getReceipeId()).status(Constants.FAILURE).msg(Constants.CREATE_FAILURE).build();
+            }else{
+                request.getReceipe().setReceipeId(String.valueOf(data.getRecipeId()));
+                response =OutputResponse.builder().receipeId(request.getReceipe().getReceipeId()).status(Constants.SUCCESS).msg(Constants.CREATE_MSG).build();
+            }
         }catch (Exception e){
             throw new BusinessException(request.getReceipe().getReceipeId() ,e);
         }
-        return new ResponseEntity<OutputResponse>(OutputResponse.builder().receipeId(request.getReceipe().getReceipeId()).status(Constants.SUCCESS).msg(Constants.CREATE_MSG).build(), HttpStatus.CREATED);
+        return new ResponseEntity<OutputResponse>(response,HttpStatus.CREATED);
     }
 
     @Operation(summary = "This Service is used to deleta a recipe with receipeId in the database.")

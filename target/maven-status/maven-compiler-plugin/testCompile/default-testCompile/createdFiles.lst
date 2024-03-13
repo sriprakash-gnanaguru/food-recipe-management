@@ -1,1 +1,6 @@
+com\food\recipe\manage\common\transformer\IngredientTransformerTest.class
+com\food\recipe\manage\common\exception\ErrorHandlerTest.class
 com\food\recipe\manage\recipemanagement\RecipeManagementApplicationTests.class
+com\food\recipe\manage\common\transformer\FoodReceipeManagmentServiceTest.class
+com\food\recipe\manage\common\transformer\ReceipeTransformerTest.class
+com\food\recipe\manage\adapter\in\http\FoodReceipeManagmentControllerTest.class

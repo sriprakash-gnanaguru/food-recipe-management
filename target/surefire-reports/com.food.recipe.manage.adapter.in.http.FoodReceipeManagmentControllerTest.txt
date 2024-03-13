@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.food.recipe.manage.adapter.in.http.FoodReceipeManagmentControllerTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.44 s -- in com.food.recipe.manage.adapter.in.http.FoodReceipeManagmentControllerTest

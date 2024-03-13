@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: net.joshka:junit-json-params:5.9.1-r0">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/joshka/junit-json-params/5.9.1-r0/junit-json-params-5.9.1-r0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/net/joshka/junit-json-params/5.9.1-r0/junit-json-params-5.9.1-r0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/joshka/junit-json-params/5.9.1-r0/junit-json-params-5.9.1-r0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

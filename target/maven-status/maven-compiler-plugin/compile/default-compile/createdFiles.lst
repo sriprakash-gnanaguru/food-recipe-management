@@ -7,7 +7,7 @@ com\food\recipe\manage\common\exception\BusinessException.class
 com\food\recipe\manage\adapter\out\db\dao\FoodReceipeSpecification.class
 com\food\recipe\manage\common\Constants.class
 com\food\recipe\manage\common\exception\BusinessException$BusinessExceptionBuilder.class
-com\food\recipe\manage\common\CommonUtil.class
+com\food\recipe\manage\common\exception\ErrorHandler.class
 com\food\recipe\manage\adapter\out\db\dto\FoodReceipe$FoodReceipeBuilder.class
 com\food\recipe\manage\recipemanagement\RecipeManagementApplication.class
 com\food\recipe\manage\adapter\out\http\domain\OutputResponse$OutputResponseBuilder.class

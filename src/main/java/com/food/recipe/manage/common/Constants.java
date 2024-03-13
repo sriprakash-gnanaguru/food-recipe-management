@@ -9,6 +9,8 @@ public class Constants {
 
     public static final String NO_DATA_MSG = "No Data found";
 
+    public static final String CREATE_FAILURE = "Unable to persist the data in the database";
+
     public static final String UPDATE_MSG = "Receipe is updated successfully";
 
     public static final String CREATE_MSG = "Receipe persisted successfully";

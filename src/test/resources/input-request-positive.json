@@ -1,0 +1,21 @@
+{
+  "request": {
+    "userId": "Pratick",
+    "receipe":{
+      "dish": "NON-VEG",
+      "ingredients": [{"ingredientId":"2","name":"Lamp"},
+        {"ingredientId":"3","name":"Chilli"}],
+      "servings": "5",
+      "name": "Madras Lamp",
+      "instruction": "With Barbeque",
+      "receipeId": "1"
+    }
+  },
+  "response": {
+    "status": "Success",
+    "receipeId": "1",
+    "msg": "Receipe persisted successfully",
+    "errorDescr": null
+  }
+
+}
